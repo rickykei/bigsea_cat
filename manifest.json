@@ -176,11 +176,11 @@
             "mode" : "history",
             "base" : "/h5/"
         },
-        "title" : "大海流動銷售系统",
+        "title" : "大海網上產品目錄",
         "devServer" : {
             "https" : false
         },
-        "template" : "大海流動銷售系统",
+        "template" : "大海網上產品目錄",
         "sdkConfigs" : {
             "maps" : {}
         }

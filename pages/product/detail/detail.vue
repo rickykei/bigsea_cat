@@ -76,24 +76,18 @@
 					</view>
 					<view class="f22 gray9">{{ describe() }}</view>
 				</view>
-				<view class="btn-group">
-					<button type="default" plain class="btn theme-borderbtn" size="min" hover-class="none" @click="sub()">
-						<view class="icon icon-jian iconfont iconsami-select"></view>
-					</button>
-					<view class="number">{{ form.show_sku.sum }}</view>
-					<button type="primary" class="btn theme-btn" size="min" hover-class="none" @click="add()"><view class="icon icon-jia iconfont iconadd-select"></view></button>
-				</view>
+			 
 			</view>
-			<view>
-				<view class="add-to-cart-btn" @tap="confirmFunc"><view>加入购物车</view></view>
-			</view>
+		 
 		</view>
 		<!--详情内容-->
 		<view class="product-content">
+			<p><span style="font-size: 20px;">
 			<view class="border-b-e">
 				<view class="group-hd d-s-c"><text class="min-name pr f30 fb">详情</text></view>
 			</view>
 			<view class="content-box" v-html="detail.content"></view>
+			</span></p>
 		</view>
 		<!-- 商品详情模态框 end -->
 	</view>

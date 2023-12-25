@@ -115,7 +115,7 @@ function requestFun(app) {
           window.location.href = this.websiteUrl + '/index.php/api/user.usermp/login?app_id=' + this.getAppId() +
             '&referee_id=' + uni.getStorageSync('referee_id');
         } else {
-          this.gotoPage("/pages/product/list/takeaway");
+          this.gotoPage("/pages/product/list/takeaway?orderType=takeout");
         }
         // #endif
         // #ifdef APP-PLUS
@@ -124,7 +124,7 @@ function requestFun(app) {
         // #endif
         // 非公众号,跳转授权页面
         // #ifndef  H5
-        this.gotoPage("/pages/login/login");
+        this.gotoPage("/pages/product/list/takeaway?orderType=takeout");
         // #endif
       };
 }

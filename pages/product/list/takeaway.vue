@@ -3,7 +3,7 @@
 		<view class="main">
 			<view class="nav">
 				<view class="header">
-					<view class="left" @click="selectShop('/pages/index/index')">
+					<view class="left" >
 						<view class="store-name">
 							<text class="fb">{{ supplier.name }}</text>
 							<view class="iconfont icon icon-jiantou"></view>
@@ -69,7 +69,7 @@
 											<view class="right">
 												<view class="ww100">
 													<view class="name">{{ good.product_name }}</view>
-													<view class="tips text-ellipsis">{{ good.selling_point }}</view>
+													<view class="text-ellipsis">{{ good.selling_point }}{{ good.content }}</view>
 												</view>
 												<view class="price_and_action">
 													<view>
@@ -86,19 +86,11 @@
 														</view>
 													</view>
 													<view class="btn-group" v-else>
-														<button type="default" v-if="good.cart_num != 0" plain
-															class="btn reduce_btn" size="min" hover-class="none"
-															@tap.stop="reduceFunc(good)">
-															<view class="icon icon-jian iconfont iconsami-select">
-															</view>
-														</button>
+														 
 														<view class="number" v-if="good.cart_num != 0">
 															{{ good.cart_num }}
 														</view>
-														<button type="primary" class="btn add_btn" size="min"
-															hover-class="none" @tap.stop="addCart(good)">
-															<view class="icon icon-jia iconfont iconadd-select"></view>
-														</button>
+													 
 													</view>
 												</view>
 											</view>

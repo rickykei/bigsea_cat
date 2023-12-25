@@ -79,7 +79,7 @@
 				/*表单数据对象*/
 				formData: {
 					/*手机号*/
-					mobile: '88888888',
+					mobile: 'catalog',
 				},
 				loging_password: 'abcd1234',
 				register: {

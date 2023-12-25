@@ -66,13 +66,16 @@
 			// #endif
 			//应用启动参数
 			this.onStartupScene(e.query);
+			
 			this.getTabBarLinks();
+			
 		},
 		onShow: function() {
 			//console.log('App Show')
 			//#ifdef APP-PLUS
 			getApp().globalData.vueObj = this;
 			//#endif
+			this.gotoPage("/pages/product/list/takeaway?orderType=takeout");
 		},
 		onHide: function() {
 			//console.log('App Hide')
