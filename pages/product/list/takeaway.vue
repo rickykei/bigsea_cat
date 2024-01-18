@@ -345,9 +345,11 @@
 						latitude: self.latitude,
 						delivery: delivery,
 						order_type: 0,
-						table_id: 0
+						table_id: 0,
+						zelda: 0
 					},
 					function(res) {
+						/*
 						if (self.getUserId() && res.data.address_id == 0 && self.orderType == 'takeout') {
 							self.showError('未選擇收貨地址，請設置收貨地址', function() {
 								self.gotoPage('/pages/user/address/storeaddress?shop_supplier_id=' + self
@@ -355,6 +357,7 @@
 								return;
 							});
 						}
+						*/
 						self.reduceList = res.data.reduceList;
 						self.min_money = (res.data.supplier.min_money * 1).toFixed(2);
 						self.goods_list = res.data.list;
@@ -376,7 +379,7 @@
 						self.$nextTick(function() {
 							self.scrollInit();
 						});
-						self.getCart();
+						//self.getCart();
 						self.isBusiness();
 						uni.hideLoading();
 					},
@@ -797,7 +800,7 @@
 			},
 			openCartPopup() {
 				//打开/关闭购物车列表popup
-				this.getCart();
+				//this.getCart();
 				this.cartPopupVisible = !this.cartPopupVisible;
 			},
 			handleCartClear() {
